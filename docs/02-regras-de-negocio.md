@@ -21,3 +21,6 @@ O ERP deverá permitir que um usuário autenticado selecione uma empresa à qual
 
 RN-008 — Revogação de acesso empresarial durante sessão ativa:
 Quando o vínculo de um usuário com determinada empresa for bloqueado ou desativado, o ERP deverá impedir novas operações protegidas nessa empresa a partir da efetivação da alteração, independentemente da existência de uma sessão autenticada. O bloqueio não deverá afetar automaticamente os vínculos do usuário com outras empresas.
+
+RN-009 — Bloqueio global de usuário:
+Quando a conta global de um usuário estiver bloqueada, o ERP deverá impedir suas operações autenticadas em todas as empresas, independentemente do estado de seus vínculos empresariais. O bloqueio global não deverá excluir nem alterar automaticamente esses vínculos.
