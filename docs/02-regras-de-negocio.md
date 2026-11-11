@@ -15,3 +15,6 @@ Quando um papel global receber novas permissões, os papéis personalizados vinc
 
 RN-006 — Autorização para gerenciamento de permissões:
 O ERP deverá permitir o gerenciamento de papéis e permissões exclusivamente por usuários que possuam autorização específica para essa operação, respeitando o contexto da empresa em que a ação será executada.
+
+RN-007 — Seleção e contexto da empresa ativa:
+O ERP deverá permitir que um usuário autenticado selecione uma empresa à qual possua vínculo ativo, estabelecendo-a como contexto de operação. Todas as operações deverão respeitar os dados e as permissões correspondentes à empresa selecionada. A alternância entre empresas deverá exigir nova validação do vínculo.
