@@ -24,3 +24,6 @@ Quando o vínculo de um usuário com determinada empresa for bloqueado ou desati
 
 RN-009 — Bloqueio global de usuário:
 Quando a conta global de um usuário estiver bloqueada, o ERP deverá impedir suas operações autenticadas em todas as empresas, independentemente do estado de seus vínculos empresariais. O bloqueio global não deverá excluir nem alterar automaticamente esses vínculos.
+
+RN-010 — Preservação dos vínculos na reativação global:
+A reativação de uma conta global deverá preservar os estados existentes dos vínculos empresariais do usuário. O acesso a cada empresa continuará condicionado ao estado de seu respectivo vínculo e às permissões atribuídas.
