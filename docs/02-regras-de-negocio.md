@@ -12,3 +12,6 @@ Um papel personalizado deverá pertencer exclusivamente à empresa que o criou. 
 
 RN-005 — Aprovação de novas permissões herdadas:
 Quando um papel global receber novas permissões, os papéis personalizados vinculados a ele deverão manter suas permissões efetivas anteriores até que as novas permissões sejam aprovadas por um usuário autorizado da respectiva empresa.
+
+RN-006 — Autorização para gerenciamento de permissões:
+O ERP deverá permitir o gerenciamento de papéis e permissões exclusivamente por usuários que possuam autorização específica para essa operação, respeitando o contexto da empresa em que a ação será executada.
