@@ -18,3 +18,6 @@ O ERP deverá permitir o gerenciamento de papéis e permissões exclusivamente p
 
 RN-007 — Seleção e contexto da empresa ativa:
 O ERP deverá permitir que um usuário autenticado selecione uma empresa à qual possua vínculo ativo, estabelecendo-a como contexto de operação. Todas as operações deverão respeitar os dados e as permissões correspondentes à empresa selecionada. A alternância entre empresas deverá exigir nova validação do vínculo.
+
+RN-008 — Revogação de acesso empresarial durante sessão ativa:
+Quando o vínculo de um usuário com determinada empresa for bloqueado ou desativado, o ERP deverá impedir novas operações protegidas nessa empresa a partir da efetivação da alteração, independentemente da existência de uma sessão autenticada. O bloqueio não deverá afetar automaticamente os vínculos do usuário com outras empresas.
