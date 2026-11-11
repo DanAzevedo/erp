@@ -9,3 +9,6 @@ O ERP deverá impedir operações que deixem uma empresa ativa sem administrador
 
 RN-004 — Isolamento de papéis personalizados:
 Um papel personalizado deverá pertencer exclusivamente à empresa que o criou. O ERP deverá impedir sua visualização, alteração ou atribuição por usuários de outras empresas, independentemente do acesso direto à API.
+
+RN-005 — Aprovação de novas permissões herdadas:
+Quando um papel global receber novas permissões, os papéis personalizados vinculados a ele deverão manter suas permissões efetivas anteriores até que as novas permissões sejam aprovadas por um usuário autorizado da respectiva empresa.
