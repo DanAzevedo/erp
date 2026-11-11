@@ -27,3 +27,9 @@ When a user's global account is blocked, the ERP must prevent authenticated oper
 
 BR-010 — Preservation of memberships upon global account reactivation: 
 Reactivating a global account must preserve the existing statuses of the user's company memberships. Access to each company must remain subject to the status of the respective membership and the assigned permissions.
+
+RN-011 — Audit Trail for Global User Status Changes:
+The ERP shall maintain an audit trail of all changes to a user's global status, including the previous status, the new status, the person responsible for the change, the date and time of the change, and the justification. Historical records shall be retained for auditing purposes.
+
+RN-012 — Atomicity of Audited Status Changes:
+Every status change subject to auditing shall be committed atomically with its corresponding audit record. If either operation fails, the entire transaction shall be rolled back, ensuring that no changes are persisted.
