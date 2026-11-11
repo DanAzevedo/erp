@@ -27,3 +27,9 @@ Quando a conta global de um usuário estiver bloqueada, o ERP deverá impedir su
 
 RN-010 — Preservação dos vínculos na reativação global:
 A reativação de uma conta global deverá preservar os estados existentes dos vínculos empresariais do usuário. O acesso a cada empresa continuará condicionado ao estado de seu respectivo vínculo e às permissões atribuídas.
+
+RN-011 — Auditoria de alterações do estado global:
+O ERP deverá registrar o histórico de todas as alterações do estado global de um usuário, contendo o estado anterior, o novo estado, o responsável pela alteração, a data e hora e a justificativa. Os registros históricos deverão ser preservados para fins de auditoria.
+
+RN-012 — Atomicidade das alterações de estado auditadas:
+Toda alteração de estado sujeita à auditoria deverá ser confirmada juntamente com seu respectivo registro histórico. Caso qualquer uma dessas operações falhe, nenhuma das alterações deverá ser efetivada.
