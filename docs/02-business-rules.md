@@ -33,3 +33,6 @@ The ERP shall maintain an audit trail of all changes to a user's global status, 
 
 BR-012 — Atomicity of Audited Status Changes:
 Every status change subject to auditing shall be committed atomically with its corresponding audit record. If either operation fails, the entire transaction shall be rolled back, ensuring that no changes are persisted.
+
+BR-013 — Business Relationship Audit Log:
+The ERP must record the history of all status changes of a business relationship, containing the affected relationship, the previous status, the new status, the user responsible for the change, the date and time, and the justification. Historical records must be preserved for audit purposes.
