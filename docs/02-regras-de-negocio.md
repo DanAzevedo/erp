@@ -33,3 +33,6 @@ O ERP deverá registrar o histórico de todas as alterações do estado global d
 
 RN-012 — Atomicidade das alterações de estado auditadas:
 Toda alteração de estado sujeita à auditoria deverá ser confirmada juntamente com seu respectivo registro histórico. Caso qualquer uma dessas operações falhe, nenhuma das alterações deverá ser efetivada.
+
+RN-013 — Auditoria de alterações do vínculo empresarial:
+O ERP deverá registrar o histórico de todas as alterações do estado de um vínculo empresarial, contendo o vínculo afetado, o estado anterior, o novo estado, o responsável pela alteração, a data e hora e a justificativa. Os registros históricos deverão ser preservados para fins de auditoria.
