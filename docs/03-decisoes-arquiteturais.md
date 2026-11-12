@@ -22,14 +22,14 @@ Essa estrutura permitirá começar com uma operação mais simples e preservar a
 - Mais atenção à modelagem do domínio, às regras de negócio, ao RBAC e à auditoria.
 - Maior facilidade para executar e depurar a aplicação localmente.
 - Possibilidade de amadurecer os limites dos módulos antes de considerar sua distribuição em serviços.
-- 
+  
 ## Consequências negativas
 
 - A implantação e o escalonamento ocorrerão inicialmente para a aplicação inteira.
 - Falhas em um módulo poderão afetar outros módulos da aplicação.
 - A manutenção dos limites entre módulos exigirá disciplina para evitar acoplamento excessivo.
 - Uma futura extração para microsserviços exigirá adaptações; a modularização, por si só, não elimina esse trabalho.
-- 
+  
 ## Evolução futura
 
 **Aprendizado:** Haverá pelo menos um exercício prático envolvendo microsserviços e comunicação distribuída.
