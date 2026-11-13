@@ -36,3 +36,7 @@ Toda alteração de estado sujeita à auditoria deverá ser confirmada juntament
 
 RN-013 — Auditoria de alterações do vínculo empresarial:
 O ERP deverá registrar o histórico de todas as alterações do estado de um vínculo empresarial, contendo o vínculo afetado, o estado anterior, o novo estado, o responsável pela alteração, a data e hora e a justificativa. Os registros históricos deverão ser preservados para fins de auditoria.
+
+RN-014 — Ativação da conta mediante confirmação de e-mail:
+O ERP deverá atribuir o estado global PENDING a todo usuário recém-cadastrado. A conta somente poderá ser ativada após a confirmação bem-sucedida do endereço de e-mail informado, passando então para o estado ACTIVE.
+Enquanto permanecer em PENDING, o usuário não poderá realizar operações autenticadas protegidas.
