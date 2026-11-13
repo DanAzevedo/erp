@@ -32,8 +32,34 @@ Essa estrutura permitirá começar com uma operação mais simples e preservar a
   
 ## Evolução futura
 
+Aprendizado: Haverá pelo menos um exercício prático envolvendo microsserviços e comunicação distribuída.
+Produto: A adoção de microsserviços em produção dependerá de justificativa técnica, não apenas do objetivo educacional.
+O interesse em aprender sobre sistemas distribuídos também poderá motivar experimentos. Entretanto, a introdução de microsserviços no produto deverá considerar se os benefícios compensam os custos de comunicação, consistência distribuída, observabilidade e operação.
+
 **Aprendizado:** Haverá pelo menos um exercício prático envolvendo microsserviços e comunicação distribuída.
 
-**Produto:** A adoção de microsserviços em produção dependerá de justificativa técnica, não apenas do objetivo educacional.
+# ADR-002 — Identificadores UUID gerados pela aplicação
 
-O interesse em aprender sobre sistemas distribuídos também poderá motivar experimentos. Entretanto, a introdução de microsserviços no produto deverá considerar se os benefícios compensam os custos de comunicação, consistência distribuída, observabilidade e operação.
+**Status:** Aceita
+
+## Contexto
+
+As entidades do ERP precisam de identificadores que permitam distinguir cada registro. Como o sistema poderá evoluir para uma arquitetura distribuída, queremos permitir a geração desses identificadores sem depender de um banco central ou da coordenação entre serviços.
+
+## Decisão
+
+Utilizar UUIDs gerados pela aplicação para identificar as entidades de domínio. Assim, cada entidade poderá receber seu identificador no momento da criação, antes de ser salva no banco de dados.
+
+## Consequências positivas
+
+- Geração de identificadores independente do banco de dados.
+- Identificação das entidades antes da persistência.
+- Facilidade para integrar dados entre sistemas e futuros serviços, com probabilidade de colisão extremamente baixa.
+
+## Consequências negativas
+
+- Maior consumo de armazenamento em comparação com identificadores numéricos.
+- Menor facilidade de leitura e digitação.
+- Possíveis impactos no desempenho dos índices, dependendo da versão do UUID e do padrão de inserção.
+
+
