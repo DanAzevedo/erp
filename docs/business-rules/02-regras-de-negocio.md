@@ -40,3 +40,6 @@ O ERP deverá registrar o histórico de todas as alterações do estado de um v�
 RN-014 — Ativação da conta mediante confirmação de e-mail:
 O ERP deverá atribuir o estado global PENDING a todo usuário recém-cadastrado. A conta somente poderá ser ativada após a confirmação bem-sucedida do endereço de e-mail informado, passando então para o estado ACTIVE.
 Enquanto permanecer em PENDING, o usuário não poderá realizar operações autenticadas protegidas.
+
+RN-015 — Restrição da ativação inicial de usuário:
+O ERP deverá permitir a ativação inicial de uma conta global exclusivamente quando seu estado atual for PENDING e houver confirmação válida do endereço de e-mail, alterando seu estado para ACTIVE. Tentativas de ativação inicial de contas em outros estados deverão ser rejeitadas, preservando o estado existente.
