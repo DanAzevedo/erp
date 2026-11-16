@@ -43,3 +43,9 @@ Enquanto permanecer em PENDING, o usuário não poderá realizar operações aut
 
 RN-015 — Restrição da ativação inicial de usuário:
 O ERP deverá permitir a ativação inicial de uma conta global exclusivamente quando seu estado atual for PENDING e houver confirmação válida do endereço de e-mail, alterando seu estado para ACTIVE. Tentativas de ativação inicial de contas em outros estados deverão ser rejeitadas, preservando o estado existente.
+
+RN-016 — Transições permitidas para bloqueio global de usuário:
+O ERP deverá permitir o bloqueio global de usuários que estejam nos estados PENDING, ACTIVE ou INACTIVE, alterando seu estado para BLOCKED.
+O ERP deverá rejeitar solicitações de bloqueio de usuários que já estejam no estado BLOCKED, preservando seu estado atual.
+O bloqueio global deverá respeitar as regras de auditoria e atomicidade estabelecidas nas RN-011 e RN-012.
+Uma conta global bloqueada não poderá ser ativada ou reativada por operações destinadas a outros estados.
